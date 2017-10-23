@@ -1,0 +1,4 @@
+Text color: #686064
+Red: #e5282e
+Menu text: #23272e
+Dotted Line: #b1b2b4
