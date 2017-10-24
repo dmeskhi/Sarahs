@@ -1,0 +1,39 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,600,700,700i');
+
+/* Main CSS */
+html, body {
+   	font-family: 'Montserrat', sans-serif;
+   	width: 100%;
+   	height: 100%;
+   	-webkit-font-smoothing: antialiased;
+   	font-smoothing: antialiased;
+}
+.headerbefore {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background: none;
+	z-index: 2;
+}
+.headerafter {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 90px;
+	background: rgba(0, 0, 0, 0.80);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	display: none;
+}
+.menu {
+	position: center;
+	margin: 35px auto;
+	text-align: center;
+	width: 960px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
