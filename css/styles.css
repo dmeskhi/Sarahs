@@ -35,8 +35,6 @@
    }
    body {
    	line-height: 1;
-   	background: url(../images/crossword.png);
-   	background-repeat: repeat;
    }
    ol, ul {
    	list-style: none;
@@ -63,7 +61,7 @@ html, body {
    	height: 100%;
    	-webkit-font-smoothing: antialiased;
    	font-smoothing: antialiased;
-   	background: #000;
+   	background: #fff;
 }
 .clearfix:after {
 	clear: both;
@@ -75,9 +73,16 @@ html, body {
 }
 header {
 	position: fixed;
+	background: none;
+	top: 0;
+  	left: 0;
+  	right: 0;
 	width: 100%;
+	min-height: 85px;
 	text-align: center;
 	padding: 0;
+	z-index: 20;
+	transition: 0.35s all ease;
 }
 .nav-wrap {
 	width: 960px;
@@ -133,11 +138,11 @@ ul {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	-webkit-transition: max-height 0.4s;
-	-ms-transition: max-height 0.4s;
-	-moz-transition: max-height 0.4s;
-	-o-transition: max-height 0.4s;
-	transition: max-height 0.4s;
+	-webkit-transition: max-height 0.4s all ease;
+	-ms-transition: max-height 0.4s all ease;
+	-moz-transition: max-height 0.4s all ease;
+	-o-transition: max-height 0.4s all ease;
+	transition: max-height 0.4s all ease;
 }
 ul li {
 	display: inline-block;
@@ -146,6 +151,20 @@ ul li {
 }
 ul li img {
 	vertical-align: middle;
+}
+/* Menu shrink */
+.scrolled {
+  min-height: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.35s all ease;
+}
+.scrolled ul {
+  padding: 1rem 1rem;
+  transition: 0.35s all ease;
+}
+.scrolled li {
+  color: white;
+  transition: 0.2s all ease-in-out;
 }
 .logo-handle {
 	width: 100%;
@@ -197,10 +216,15 @@ ul li img {
 	.logo-handle {
 		margin: 0 auto;
 		display: block;
-		background: rgba(0, 0, 0, 0.8);
-		
+		background: rgba(0, 0, 0, 0.8);		
 	}
-	
+	header {
+		position: absolute;
+	}
+	.scrolled ul {
+		display: none;
+	}
+
 }
 /*Welcome-About*/
 .lpage {
@@ -210,6 +234,7 @@ ul li img {
 		background-repeat: no-repeat;
 		display: table;
 		background-size: cover;
+		min-height: 100vh;
 	}
 	.lpage .inner {
 		display: table-cell;
