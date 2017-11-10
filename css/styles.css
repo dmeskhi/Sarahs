@@ -101,7 +101,7 @@ header {
 	order: 2;
 }
 .right-nav{
-	width: 395px;
+	width: 405px;
 	order: 3;
 }
 ul li > a {
@@ -455,6 +455,56 @@ section.element.fixedscroll-2 {
 .button-highlight:hover {
 	background-color: #fff;
     color: #e5282e;
+}
+.reservation-wrap {
+	width: 700px;
+	margin: 40px auto;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+.reservation-item-left {
+	text-align: center;
+}
+.reservation-item-right {
+	width: 350px;
+	height: 233px;
+	background: #fff;
+	font-size: 16px;
+	color: #686064;
+	font-weight: 300;
+	text-align: center;
+	line-height: 1.5em;
+	align-self: flex-start;
+	padding-right: 15px;
+}
+.reservation-item-right h3 {
+	font-size: 1.5em;
+	color: #e5282e;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-top: 25px;
+}
+.reservation-item-right h4 {
+	font-size: 1.5em;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding-top: 15px;
+}
+.reservation-item-right h6 {
+	font-size: 16px;
+	color: #000;
+	font-weight: 500;
+	padding-top: 15px;
+}
+@media screen and (max-width: 860px) {
+	section.element.fixedscroll h5 {
+		padding-top: 40px;
+	}
+	.reservation-wrap {
+		display: block;
+	}
 }
 @media screen and (max-width: 860px) {
 	.scetion-container {
