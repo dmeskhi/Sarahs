@@ -167,7 +167,7 @@ ul li img {
   transition: 0.2s all ease-in-out;
 }
 .logo-handle {
-	width: 100%;
+	
 	margin: 0 auto;
 	text-align: center;
 	padding: 15px 10px;
@@ -394,7 +394,9 @@ section.element p:last-child {
 	margin-bottom: 0;
 }
 section.element.content {
+	margin: 0 auto;
 	padding: 40px 0;
+	width: 960px;
 }
 
 section.element.content h2 {
@@ -522,6 +524,9 @@ section.element.fixedscroll-2 {
 	.scetion-container {
 		width: 480px;
 	}
+	section.element.content {
+		width: 480px;
+}
 }
 @media screen and (max-width: 860px) {
 	.scetion-container-flex {
@@ -572,8 +577,24 @@ section.element.fixedscroll-2 {
 }
 /*Footer*/
 footer.content{
-	margin: 0 auto;
 	background-color: #000;
-	height: 120px;
+	height: 60px;
+	padding-top: 60px;
+}
+.copyright {
+	margin: 0px auto;
+	width: 960px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+
+}
+@media screen and (max-width: 860px) {
+	.copyright {
+		margin: 0 auto;
+		width: 460px;
+		
+	}
 }
 
