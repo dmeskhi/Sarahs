@@ -465,6 +465,7 @@ section.element.fixedscroll-2 {
 }
 .reservation-item-left {
 	text-align: center;
+	
 }
 .reservation-item-right {
 	width: 350px;
@@ -504,7 +505,18 @@ section.element.fixedscroll-2 {
 	}
 	.reservation-wrap {
 		display: block;
+		width: 350px;
 	}
+	.reservation-item-left {
+	text-align: center;
+	width: 350px;
+	height: 233px;
+	}
+	.reservation-item-right {
+	text-align: center;
+	width: 335px;
+	height: 233px;
+ 	}
 }
 @media screen and (max-width: 860px) {
 	.scetion-container {
@@ -519,5 +531,49 @@ section.element.fixedscroll-2 {
 	.menu-bb-wrap {
 		width: 460px;
 	}
+}
+/* Sum up Area */
+.sumup-container-flex {
+	display: flex;
+	justify-content: space-between;
+	width: 960px;
+	margin: 40px auto;
+	/*border: 1px solid black;*/
+	
+}
+.sumup-item {
+	text-align: center;
+	margin: 5px;
+}
+.sumup-item-title {
+	font-size: 24px;
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+}
+.sumup-item-text {
+	font-size: 14px;
+	color: #000;
+	font-weight: 300;
+	line-height: 20px;
+}
+.sumup-item-social {
+	font-size: 24px;
+	color: #000;
+	font-weight: 300;
+	line-height: 20px;
+}
+@media screen and (max-width: 860px) {
+	.sumup-container-flex {
+		display: block;
+		width: 460px;
+	}
+}
+/*Footer*/
+footer.content{
+	margin: 0 auto;
+	background-color: #000;
+	height: 120px;
 }
 
