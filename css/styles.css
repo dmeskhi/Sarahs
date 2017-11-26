@@ -93,6 +93,7 @@ header {
 	justify-content: space-between;
 }
 .left-nav{
+	font-size: 14px;
 	width: 395px;
 	order: 1;
 }
@@ -101,6 +102,7 @@ header {
 	order: 2;
 }
 .right-nav{
+	font-size: 14px;
 	width: 405px;
 	order: 3;
 }
@@ -178,7 +180,8 @@ ul li img {
 .clear {
 	clear: both;
 }
-@media screen and (max-width: 860px) {
+/*Responsive Menu*/
+@media screen and (max-width: 991px) {
 	ul {
 		max-height: 0;
 		background: rgba(0, 0, 0, 0.8);
@@ -236,30 +239,60 @@ ul li img {
 		background-size: cover;
 		min-height: 100vh;
 	}
-	.lpage .inner {
+.menu-lpage {
+		height: 50%;
+		width: 100%;
+		background: url(../images/01.jpg)50% 50%;
+		background-repeat: no-repeat;
+		display: table;
+		background-size: cover;
+		min-height: 50vh;
+	}
+.lpage .inner {
 		display: table-cell;
 		vertical-align: middle;
 		width: 100%;
 		max-width: none;
 	}
-	.lpcontent {
+.menu-lpage .inner {
+		display: table-cell;
+		vertical-align: middle;
+		width: 50%;
+		max-width: none;
+	}
+.lpcontent {
 		width: 960px;
 		margin: 0 auto;
 		text-align: center;
 	}
-	.lpcontent h1 {
+.menu-lpcontent {
+		width: 960px;
+		margin: 0 auto;
+		text-align: center;
+	}
+.lpcontent h1 {
 		font-size: 72px;
 		font-weight: 700;
 		color: #fff;
 		letter-spacing: 0.05em;
 		margin-bottom: 20px;
 	}
-	@media screen and (max-width: 860px){
-	.lpcontent {
-		width: 480px;
+.menu-lpcontent h1 {
+		font-size: 72px;
+		font-weight: 700;
+		color: #fff;
+		letter-spacing: 0.05em;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+/*Responsive landing page for desktops*/
+@media screen and (max-width: 991px){
+	.lpcontent, .menu-lpcontent {
+		width: 750px;
 		margin: 0 auto;
 		text-align: center;
 	}
+
 	.lpcontent h1 {
 		font-size: 52px;
 		font-weight: 700;
@@ -267,8 +300,38 @@ ul li img {
 		letter-spacing: 0.05em;
 		margin-bottom: 20px;
 	}
+}
+/*Responsive landing page for 768px devices*/
+@media screen and (max-width: 767px){
+	.lpcontent {
+		width: 500px;
+		margin: 0 auto;
+		text-align: center;
 	}
-	.lpcontent .subtitle {
+.lpcontent, .menu-lpcontent h1 {
+		font-size: 42px;
+		font-weight: 500;
+		color: #fff;
+		letter-spacing: 0.05em;
+		margin-bottom: 20px;
+	}
+}
+/*Responsive landing page for 480px devices*/
+@media screen and (max-width: 479px){
+	.lpcontent, .menu-lpcontent {
+		width: 280px;
+		margin: 0 auto;
+		text-align: center;
+	}
+.lpcontent, .menu-lpcontent h1 {
+		font-size: 32px;
+		font-weight: 500;
+		color: #fff;
+		letter-spacing: 0.05em;
+		margin-bottom: 20px;
+	}
+}
+.lpcontent .subtitle {
 		text-align: center;
 		font-size: 24px;
 		color: #fff;
@@ -311,19 +374,44 @@ ul li img {
 }
 
 .welcome-right {
-	text-align: center;
+	background: url(../images/welcome.jpg); 
+	background-size: inherit;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: inherit;
+	height: 233px;
 }
-@media screen and (max-width: 860px) {
+/*Responsive welcome section for 991px desktop*/
+@media screen and (max-width: 991px) {
 	.welcome-wrap {
 		display: block;
-		width: 480px;
+		width: 550px;
+		text-align: center;}
+	.welcome-left {
+		padding-bottom: 25px;}
+	.welcome-right {
+	text-align: center;
+	background: url(../images/welcome.jpg) no-repeat center; 
+	height: 250px;}
+}
+/*Responsive welcome section for 480px desktop*/
+@media screen and (max-width: 479px) {
+	.welcome-wrap {
+		display: block;
+		width: 350px;
 		text-align: center;
 	}
 	.welcome-left {
 		padding-bottom: 25px;
 	}
+	.welcome-right {
+	text-align: center;
+	background: url(../images/welcome.jpg) no-repeat center; 
+	height: 250px;
+}
 
 }
+
 
 /* SECTION CONTAINER */
 .scetion-container {
@@ -368,7 +456,24 @@ section.element.fixedscroll h5 {
 	padding-top: 150px;
 	font-weight: 500;
 }
+section.element.menuscroll h5 {
+	font-size: 0.8em;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+	padding-top: 150px;
+	font-weight: 500;
+}
 section.element.fixedscroll h2 {
+	font-size: 1.5em;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-weight: 500;
+}
+section.element.menuscroll h2 {
 	font-size: 1.5em;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -407,7 +512,30 @@ section.element.content h2 {
 	font-weight: 500;
 	margin: 0 0 40px 0;
 }
+section.element.menu-content {
+	margin: 0 auto;
+	padding: 40px 0;
+	width: 960px;
+}
+
+section.element.menu-content h2 {
+	font-size: 1.5em;
+	color: #e5282e;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 500;
+	margin: 0 0 40px 0;
+}
 section.element.content h5 {
+	font-size: 0.8em;
+	color: #686064;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 500;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+section.element.menu-content h5 {
 	font-size: 0.8em;
 	color: #686064;
 	text-transform: uppercase;
@@ -424,11 +552,23 @@ section.element.fixedscroll {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+section.element.menuscroll {
+	height: 600px;
+	background-position: 50% 50%;	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 section.element.fixedscroll-1 {
 	background-image: url("../images/005.jpg");
 }
 section.element.fixedscroll-2 {
 	background-image: url("../images/003.jpg");
+}
+section.element.menuscroll-1 {
+	background-image: url("../images/006.jpg");
+}
+section.element.menuscroll-2 {
+	background-image: url("../images/007.jpg");
 }
 .menu-bb-wrap {
 	width: 960px;
@@ -501,13 +641,14 @@ section.element.fixedscroll-2 {
 	font-weight: 500;
 	padding-top: 15px;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 991px) {
 	section.element.fixedscroll h5 {
 		padding-top: 40px;
 	}
 	.reservation-wrap {
 		display: block;
 		width: 350px;
+		margin: 20px auto;
 	}
 	.reservation-item-left {
 	text-align: center;
@@ -520,15 +661,28 @@ section.element.fixedscroll-2 {
 	height: 233px;
  	}
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 991px) {
 	.scetion-container {
+		
 		width: 480px;
 	}
-	section.element.content {
+	section.element.content, section.element.menu-content {
 		width: 480px;
+	}
 }
+@media screen and (max-width: 479px) {
+	.scetion-container {
+		
+		width: 350px;
+	}
+	section.element.content, section.element.menu-content {
+		width: 350px;
 }
-@media screen and (max-width: 860px) {
+	.reservation-wrap {
+		margin: 20px auto;
+	}
+}
+@media screen and (max-width: 991px) {
 	.scetion-container-flex {
 		display: block;
 		width: 460px;
@@ -537,12 +691,32 @@ section.element.fixedscroll-2 {
 		width: 460px;
 	}
 }
+@media screen and (max-width: 479px) {
+	.scetion-container-flex {
+		display: block;
+		width: 350px;
+		margin: 0;
+	}
+	.menu-item {
+	margin: 5px;
+	width: 350px;
+}
+	.menu-bb-wrap {
+		width: 300px;
+		margin: 25px;
+	}
+}
 /* Sum up Area */
+.sumup-container {
+	background-color: #f5f5f5;
+	height: 250px;
+}
 .sumup-container-flex {
 	display: flex;
 	justify-content: space-between;
 	width: 960px;
-	margin: 40px auto;
+	margin: 100px auto;
+	padding-top: 70px; 
 	/*border: 1px solid black;*/
 	
 }
@@ -569,10 +743,22 @@ section.element.fixedscroll-2 {
 	font-weight: 300;
 	line-height: 20px;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 991px) {
 	.sumup-container-flex {
 		display: block;
 		width: 460px;
+	}
+	.sumup-container {
+		height: 500px;
+	}
+}
+@media screen and (max-width: 479px) {
+	.sumup-container-flex {
+		display: block;
+		width: 350px;
+	}
+	.sumup-container {
+		height: 500px;
 	}
 }
 /*Footer*/
@@ -590,10 +776,17 @@ footer.content{
 	font-weight: 500;
 
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 991px) {
 	.copyright {
 		margin: 0 auto;
 		width: 460px;
+		
+	}
+}
+@media screen and (max-width: 479px) {
+	.copyright {
+		margin: 0 auto;
+		width: 350px;
 		
 	}
 }
