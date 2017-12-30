@@ -287,13 +287,25 @@ ul li img {
 	}
 /*Responsive landing page for desktops*/
 @media screen and (max-width: 991px){
-	.lpcontent, .menu-lpcontent {
+	.lpcontent {
+		width: 750px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.menu-lpcontent {
 		width: 750px;
 		margin: 0 auto;
 		text-align: center;
 	}
 
 	.lpcontent h1 {
+		font-size: 52px;
+		font-weight: 700;
+		color: #fff;
+		letter-spacing: 0.05em;
+		margin-bottom: 20px;
+	}
+	.menu-lpcontent h1 {
 		font-size: 52px;
 		font-weight: 700;
 		color: #fff;
@@ -308,7 +320,14 @@ ul li img {
 		margin: 0 auto;
 		text-align: center;
 	}
-.lpcontent, .menu-lpcontent h1 {
+	.lpcontent h1 {
+		font-size: 42px;
+		font-weight: 500;
+		color: #fff;
+		letter-spacing: 0.05em;
+		margin-bottom: 20px;
+	}
+	.menu-lpcontent h1 {
 		font-size: 42px;
 		font-weight: 500;
 		color: #fff;
@@ -318,12 +337,24 @@ ul li img {
 }
 /*Responsive landing page for 480px devices*/
 @media screen and (max-width: 479px){
-	.lpcontent, .menu-lpcontent {
+	.lpcontent {
 		width: 280px;
 		margin: 0 auto;
 		text-align: center;
 	}
-.lpcontent, .menu-lpcontent h1 {
+	.menu-lpcontent {
+		width: 280px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.lpcontent h1 {
+		font-size: 32px;
+		font-weight: 500;
+		color: #fff;
+		letter-spacing: 0.05em;
+		margin-bottom: 20px;
+	}
+	.menu-lpcontent h1 {
 		font-size: 32px;
 		font-weight: 500;
 		color: #fff;
@@ -349,6 +380,7 @@ ul li img {
 	justify-content: space-around;
 }
 .welcome-left {
+
 	font-size: 16px;
 	color: #686064;
 	font-weight: 300;
@@ -374,13 +406,14 @@ ul li img {
 }
 
 .welcome-right {
-	background: url(../images/welcome.jpg); 
+	/*background: url(../images/welcome.jpg); 
 	background-size: inherit;
 	background-position: center;
-	background-repeat: no-repeat;
-	width: inherit;
-	height: 233px;
+	background-repeat: no-repeat;*/
+	
+	height: 400px;
 }
+
 /*Responsive welcome section for 991px desktop*/
 @media screen and (max-width: 991px) {
 	.welcome-wrap {
@@ -391,7 +424,7 @@ ul li img {
 		padding-bottom: 25px;}
 	.welcome-right {
 	text-align: center;
-	background: url(../images/welcome.jpg) no-repeat center; 
+	/*background: url(../images/welcome.jpg) no-repeat center;*/ 
 	height: 250px;}
 }
 /*Responsive welcome section for 480px desktop*/
@@ -406,7 +439,7 @@ ul li img {
 	}
 	.welcome-right {
 	text-align: center;
-	background: url(../images/welcome.jpg) no-repeat center; 
+	/*background: url(../images/welcome.jpg) no-repeat center;*/
 	height: 250px;
 }
 
@@ -455,6 +488,16 @@ section.element.fixedscroll h5 {
 	margin-bottom: 10px;
 	padding-top: 150px;
 	font-weight: 500;
+}
+
+.playbtn {
+	font-size: 14em;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+	padding-top: 180px;
+	font-weight: 300;
 }
 section.element.menuscroll h5 {
 	font-size: 0.8em;
@@ -593,6 +636,7 @@ section.element.menuscroll-2 {
 	background-color: #e5282e; 
     color: #fff; 
     border: 2px solid #e5282e;
+    text-decoration: none;
 }
 .button-highlight:hover {
 	background-color: #fff;
