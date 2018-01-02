@@ -489,7 +489,7 @@ section.element.fixedscroll h5 {
 	padding-top: 150px;
 	font-weight: 500;
 }
-
+/* Video Button */
 .playbtn {
 	font-size: 14em;
 	color: #ffffff;
@@ -499,6 +499,64 @@ section.element.fixedscroll h5 {
 	padding-top: 180px;
 	font-weight: 300;
 }
+.playbtn a {	
+	color: #ffffff;	
+}
+.playbtn a:hover {	
+	color: #e5282e;
+	-webkit-transition: color 0.4s ease;
+	-ms-transition: color 0.4s ease;
+	-moz-transition: color 0.4s ease;
+	-o-transition: color 0.4s ease;	
+	transition: color 0.4s ease;
+	cursor: pointer;
+}
+/* Modal CSS */
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.7);
+}
+.modal-content{
+	background-color: #f4f4f4;
+	margin: 20% auto;
+	width: 30%;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+	animation-name: modalopen;
+	animation-duration: 1s;
+	/*position: relative;
+	margin: 20% auto;
+	padding-bottom: 56.25%; 
+	padding-top: 25px;
+	height: 0;*/
+}
+.modal-header{
+	background: #f4f4f4;
+	padding: 10px;
+	font-weight: 500;
+}
+@keyframes modalopen{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.closeBtn {
+	color: #ccc;
+	float: right;
+	font-size: 30px;
+}
+.closeBtn:hover,closeBtn:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 section.element.menuscroll h5 {
 	font-size: 0.8em;
 	color: #ffffff;
@@ -612,6 +670,9 @@ section.element.menuscroll-1 {
 }
 section.element.menuscroll-2 {
 	background-image: url("../images/007.jpg");
+}
+section.element.aboutscroll-1 {
+	background-image: url("../images/008.jpg");
 }
 .menu-bb-wrap {
 	width: 960px;
