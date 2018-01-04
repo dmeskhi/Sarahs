@@ -556,6 +556,52 @@ ul li img {
     height: 400px;
 }
 
+.cater-wrap {
+    width: 960px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.cater-left {
+
+    font-size: 16px;
+    color: #686064;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5em;
+    align-self: flex-start;
+    padding-right: 15px;
+}
+
+.cater-left h5 {
+    font-size: 0.8em;
+    color: #686064;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.cater-left h2 {
+    font-size: 1.5em;
+    color: #e5282e;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.cater-right {
+    /*background: url(../images/welcome.jpg); 
+	background-size: inherit;
+	background-position: center;
+	background-repeat: no-repeat;*/
+    height: 280px;
+    text-align: center;
+}
+
 
 /*Responsive welcome section for 991px desktop*/
 
@@ -736,7 +782,50 @@ closeBtn:focus {
     text-decoration: none;
     cursor: pointer;
 }
+/* Slider CSS */
+.slider {
+  max-width: 940px;
+  margin: 0px auto 30px auto;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);}
 
+.slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    height: 200px;}
+
+.slide-group {
+    width: 100%;
+    height: 100%;
+    position: relative;}
+
+.slide {
+    width: 94%;
+    height: 100%;
+    display: none;
+    position: absolute;
+	padding: 50px 20px 20px 20px;
+	text-align: center;}
+
+.slide:first-child {
+    display: block;}
+
+
+/********** BUTTONS **********/
+.slide-buttons {
+  text-align: center;}
+
+.slide-btn {
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 200%;
+  line-height: 0.5em;}
+
+.slide-btn.active, .slide-btn:hover {
+  color: #e5282e;
+  cursor: pointer;}
+ /* End of Slider CSS */
 section.element.menuscroll h5 {
     font-size: 0.8em;
     color: #ffffff;
@@ -868,6 +957,10 @@ section.element.menuscroll-2 {
 
 section.element.aboutscroll-1 {
     background-image: url("../images/008.jpg");
+}
+
+section.element.aboutscroll-2 {
+    background-image: url("../images/009.jpg");
 }
 
 .menu-bb-wrap {
