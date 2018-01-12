@@ -37,61 +37,81 @@
     <section class="menu-lpage">
         <div class="inner">
             <div class="menu-lpcontent">
-                <h1>Catering</h1>
+                <h1>Contact us</h1>
             </div>
     </section>
     <!-- Catering Menu Section -->
-    <section class="element menu-content">
-        <!-- Business -->
-        <div class="cater-wrap">
-            <div class="cater-left">
-                <img src="images/business.jpg" alt="Catering for Business Meetings">
-            </div>
-            <div class="cater-right">
-                <h2>Business Meetings</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vel nemo neque doloribus omnis, dicta non amet voluptate nesciunt dolorem error tenetur saepe sunt.</p>
-            </div>
-        </div>  
-        <!-- Weddings -->
-        <div class="cater-wrap">
-            <div class="cater-left">
-                <h2>Weddings</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vel nemo neque doloribus omnis, dicta non amet voluptate nesciunt dolorem error tenetur saepe sunt.</p>                
-            </div>
-            <div class="cater-right">
-                <img src="images/wedding.jpg" alt="Catering for Weddings">
-            </div>
-        </div> 
-        <!-- Birthdays -->
-        <div class="cater-wrap">
-            <div class="cater-left">
-                <img src="images/bday.jpg" alt="Catering for Business Meetings">
-            </div>
-            <div class="cater-right">
-                <h2>Birthdays</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vel nemo neque doloribus omnis, dicta non amet voluptate nesciunt dolorem error tenetur saepe sunt.</p>
-            </div>
-        </div> 
-        <div class="menu-bb-wrap">
-            <a href="menu.html">
-                <div class="button button-highlight">View Full Menu</div>
-            </a>
-        </div>       
-    </section>
-    <!-- End of Appertizer Section -->
-    
-    <!-- Information Section -->
-    <section class="sumup-container">
-        <div class="sumup-container-flex">
-            <div class="sumup-item">
-                <p class="sumup-item-title">Contact</p>
-                <p class="sumup-item-text">
-                    375 Brickell Court
-                    <br /> Phoenix, AZ
-                    <br /> (123)456-7890
+    <section class="element address-content">
+        <!-- Google Map API -->
+        <div id="googleMap"></div>
+        <script>
+        function initMap() {
+            var uluru = { lat: 40.752569, lng: -73.985988 };
+            var map = new google.maps.Map(document.getElementById('googleMap'), {
+                zoom: 13,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmfd3j3_GZsyEKwL8E0FCdvN8oK0O7I8I&callback=initMap">
+        </script>
+        <!-- Contact Form -->
+        <div class="address-wrap">
+            <div class="address-left">
+                <h2>Address Info</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <br /> Ratione vel nemo neque doloribus omnis.</p>
+                <p>375 Brickell Court
+                    <br />Phoenix, AZ 34221
+                    <br />
+                    <br /> (123)456 7890
+                    <br />
                     <br /> info@example.com
                 </p>
             </div>
+            <div class="address-right">
+                
+                    <form>
+                        <div class="row">
+                            
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Email..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Subject..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Text.." style="height:100px"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Send Message">
+                        </div>
+                    </form>
+                
+            </div>
+        </div>
+    </section>
+    <!-- End of Appertizer Section -->
+    <!-- Information Section -->
+    <section class="sumup-container">
+        <div class="sumup-container-flex">
             <div class="sumup-item">
                 <p class="sumup-item-title">Opening Times</p>
                 <p class="sumup-item-text">
